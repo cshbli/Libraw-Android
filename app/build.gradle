@@ -7,7 +7,7 @@ android {
     compileSdk 32
     viewBinding.enabled true
     defaultConfig {
-        applicationId "com.riac.camsync"
+        applicationId "com.tssystems.librawtest"
         minSdk 16
         targetSdk 32
         versionCode 1
