@@ -1,0 +1,40 @@
+{
+  "buildFiles": [
+    "/home/ramses/AndroidStudioProjects/librawtest/app/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/ramses/Android/Sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/ramses/Android/Sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "libraw::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "libraw",
+      "output": "/home/ramses/AndroidStudioProjects/librawtest/app/build/intermediates/cxx/Debug/5z3k5g5o/obj/armeabi-v7a/liblibraw.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+      "cppCompilerExecutable": "/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

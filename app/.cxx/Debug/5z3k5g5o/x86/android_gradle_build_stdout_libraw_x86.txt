@@ -1,0 +1,220 @@
+ninja: Entering directory `/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/x86'
+[1/9] Building C object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/libraw/swab.c.o
+[2/9] Building C object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/libraw/libraw.c.o
+[3/9] Building CXX object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/src/libraw_c_api.cpp.o
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_c_api.cpp:22:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:121:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> f;       /* will close() automatically through dtor */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_c_api.cpp:22:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:122:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> saved_f; /* when *f is a subfile, *saved_f is the master file */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+2 warnings generated.
+[4/9] Building CXX object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/internal/dcraw_fileio.cpp.o
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/internal/dcraw_fileio.cpp:25:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:121:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> f;       /* will close() automatically through dtor */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/internal/dcraw_fileio.cpp:25:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:122:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> saved_f; /* when *f is a subfile, *saved_f is the master file */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+2 warnings generated.
+[5/9] Building CXX object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/src/libraw_datastream.cpp.o
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_datastream.cpp:27:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:121:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> f;       /* will close() automatically through dtor */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_datastream.cpp:27:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:122:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> saved_f; /* when *f is a subfile, *saved_f is the master file */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_datastream.cpp:85:10: warning: 'auto_ptr<std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+    std::auto_ptr<std::filebuf> buf(new std::filebuf());
+         ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_datastream.cpp:226:8: warning: 'auto_ptr<std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::filebuf> buf(new std::filebuf());
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_filebuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+4 warnings generated.
+[6/9] Building CXX object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/internal/demosaic_packs.cpp.o
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/internal/demosaic_packs.cpp:22:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:121:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> f;       /* will close() automatically through dtor */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/internal/demosaic_packs.cpp:22:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:122:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> saved_f; /* when *f is a subfile, *saved_f is the master file */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+2 warnings generated.
+[7/9] Building CXX object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp.o
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp:34:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:121:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> f;       /* will close() automatically through dtor */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp:34:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:122:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> saved_f; /* when *f is a subfile, *saved_f is the master file */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp:3315:9: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        register int bl = imgdata.color.phase_one_data.t_black;
+        ^~~~~~~~~
+../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp:3329:9: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+        register int bl = imgdata.color.phase_one_data.t_black;
+        ^~~~~~~~~
+../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp:6155:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+  register char *cur, *last;
+  ^~~~~~~~~
+../../../../src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp:6155:3: warning: 'register' storage class specifier is deprecated and incompatible with C++17 [-Wdeprecated-register]
+  register char *cur, *last;
+  ^~~~~~~~~
+6 warnings generated.
+[8/9] Building CXX object CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/internal/dcraw_common.cpp.o
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/internal/dcraw_common.cpp:27:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:121:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> f;       /* will close() automatically through dtor */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/internal/dcraw_common.cpp:27:
+In file included from ../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw.h:35:
+../../../../src/main/ndk/Libraw_Open/jni/src/libraw/libraw_datastream.h:122:8: warning: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' is deprecated [-Wdeprecated-declarations]
+  std::auto_ptr<std::streambuf> saved_f; /* when *f is a subfile, *saved_f is the master file */
+       ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory:2079:28: note: 'auto_ptr<std::__ndk1::basic_streambuf<char, std::__ndk1::char_traits<char> > >' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:941:39: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#  define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                      ^
+/home/ramses/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:930:48: note: expanded from macro '_LIBCPP_DEPRECATED'
+#    define _LIBCPP_DEPRECATED __attribute__ ((deprecated))
+                                               ^
+2 warnings generated.
+[9/9] Linking CXX shared library ../../../../build/intermediates/cxx/Debug/5z3k5g5o/obj/x86/liblibraw.so

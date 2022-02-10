@@ -1,16 +1,10 @@
 #include "swab.h"
-void swab(const void *p_src_, void *p_dst_, ssize_t n) {
-	const uint8_t *p_src = (uint8_t*)p_src_;
-	uint8_t *p_dst = (uint8_t*)p_dst_;
-	uint8_t tmp;
-	ssize_t i;
- 
-	if (n < 0)
-		return;
-
-	for (i = 0; i < n - 1; i += 2) {
-		tmp = p_src[i + 0];
-		p_dst[i + 0] = p_src[i + 1];
-		p_dst[i + 1] = tmp;
-	}
+#include <byteswap.h>
+void swab(const void *from, void *to, ssize_t n) {
+    const int16_t *in = (int16_t*)from;
+    int16_t *out = (int16_t*)to;
+    n /= 2;
+    for (ssize_t i = 0 ; i < n; ++i) {
+        out[i] = bswap_16(in[i]);
+    }
 }

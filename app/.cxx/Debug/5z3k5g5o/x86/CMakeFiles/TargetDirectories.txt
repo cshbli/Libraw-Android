@@ -1,0 +1,3 @@
+/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/x86/CMakeFiles/rebuild_cache.dir
+/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/x86/CMakeFiles/edit_cache.dir
+/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/x86/CMakeFiles/libraw.dir
