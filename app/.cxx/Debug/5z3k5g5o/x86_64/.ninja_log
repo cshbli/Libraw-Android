@@ -1,0 +1,10 @@
+# ninja log v5
+1	15	1644454253	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/libraw/swab.c.o	69aaeed29f3b07e9
+1	36	1644454253	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/libraw/libraw.c.o	30fde3d001b59893
+0	581	1644454254	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/src/libraw_datastream.cpp.o	1a27d30511895b69
+0	645	1644454254	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/internal/dcraw_fileio.cpp.o	75d6e42bec844112
+0	650	1644454254	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/src/libraw_c_api.cpp.o	d42d87bbffc2a94e
+0	819	1644454254	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/src/libraw_cxx.cpp.o	daf4db2c8b64ee1e
+1	905	1644454254	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/internal/demosaic_packs.cpp.o	54f0e1ba5d5bfd14
+0	1307	1644454254	CMakeFiles/libraw.dir/src/main/ndk/Libraw_Open/jni/src/internal/dcraw_common.cpp.o	7b7c160b1b88e1d6
+1307	1329	1644454254	../../../../build/intermediates/cxx/Debug/5z3k5g5o/obj/x86_64/liblibraw.so	e3af697d550ffe51

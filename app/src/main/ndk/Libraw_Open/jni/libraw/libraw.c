@@ -15,10 +15,10 @@ void cleanup(){
 		image=NULL;
 	}
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_cleanup(JNIEnv * env, jobject obj){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_cleanup(JNIEnv * env, jobject obj){
 	cleanup();
 }
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_open(JNIEnv * env, jobject obj,jstring file){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_open(JNIEnv * env, jobject obj,jstring file){
 	cleanup();
 	const char *nativeString = (*env)->GetStringUTFChars(env, file, 0);
 	__android_log_print(ANDROID_LOG_INFO,"libraw","open %s",nativeString);
@@ -30,25 +30,25 @@ JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_open(JNIEnv * env, jobject obj,
 	(*env)->ReleaseStringUTFChars(env, file, nativeString);
 	return result;	
 }
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_getWidth(){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_getWidth(){
 	return librawData->sizes.width;
 	
 }
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_getBitmapWidth(){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_getBitmapWidth(){
 	return image->width;
 }
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_getBitmapHeight(){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_getBitmapHeight(){
 	return image->height;
 }
 
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_getHeight(){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_getHeight(){
 	return librawData->sizes.height;
 
 }
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_getOrientation(){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_getOrientation(){
 	return librawData->sizes.flip;
 }
-JNIEXPORT jbyteArray JNICALL Java_com_tssystems_Libraw_getThumbnail(JNIEnv * env, jobject obj, jstring file){
+JNIEXPORT jbyteArray JNICALL Java_com_tssystems_librawtest_Libraw_getThumbnail(JNIEnv * env, jobject obj, jstring file){
 	cleanup();
 	const char *nativeString = (*env)->GetStringUTFChars(env, file, 0);
 	librawData=libraw_init(0);
@@ -66,13 +66,13 @@ JNIEXPORT jbyteArray JNICALL Java_com_tssystems_Libraw_getThumbnail(JNIEnv * env
 	}
 	return NULL;
 }
-JNIEXPORT jfloatArray JNICALL Java_com_tssystems_Libraw_getDaylightMultiplier(JNIEnv * env, jobject obj){
+JNIEXPORT jfloatArray JNICALL Java_com_tssystems_librawtest_Libraw_getDaylightMultiplier(JNIEnv * env, jobject obj){
 	float* mul = librawData->color.pre_mul;
 	jfloatArray jfloatArray = (*env)->NewFloatArray(env, 3);
 	(*env)->SetFloatArrayRegion(env, jfloatArray, 0, 3, mul);
 	return jfloatArray;
 }
-JNIEXPORT jfloatArray JNICALL Java_com_tssystems_Libraw_getWhitebalanceMultiplier(JNIEnv * env, jobject obj){
+JNIEXPORT jfloatArray JNICALL Java_com_tssystems_librawtest_Libraw_getWhitebalanceMultiplier(JNIEnv * env, jobject obj){
 	float* mul = librawData->color.cam_mul;
 	jfloatArray jfloatArray = (*env)->NewFloatArray(env, 3);
 	(*env)->SetFloatArrayRegion(env, jfloatArray, 0, 3, mul);
@@ -107,7 +107,7 @@ void CLASS pseudoinverse (float (*in)[3], float (*out)[3], int size)
 	out[i][j] += work[j][k+3] * in[i][k];
 }
 
-JNIEXPORT jfloatArray JNICALL Java_com_tssystems_Libraw_getCamRgb(JNIEnv * env, jobject obj){
+JNIEXPORT jfloatArray JNICALL Java_com_tssystems_librawtest_Libraw_getCamRgb(JNIEnv * env, jobject obj){
 	if(librawData==NULL)
 		return NULL;
 	
@@ -130,53 +130,53 @@ JNIEXPORT jfloatArray JNICALL Java_com_tssystems_Libraw_getCamRgb(JNIEnv * env, 
 	(*env)->SetFloatArrayRegion(env, jfloatArray, 0, 12,(jfloat*)inverse);
 	return jfloatArray;
 }
-JNIEXPORT jfloatArray JNICALL Java_com_tssystems_Libraw_getRgbCam(JNIEnv * env, jobject obj){
+JNIEXPORT jfloatArray JNICALL Java_com_tssystems_librawtest_Libraw_getRgbCam(JNIEnv * env, jobject obj){
 	float* mul = (float*)librawData->color.rgb_cam;
 	jfloatArray jfloatArray = (*env)->NewFloatArray(env, 12);
 	(*env)->SetFloatArrayRegion(env, jfloatArray, 0, 12, mul);
 	return jfloatArray;
 }
-JNIEXPORT jfloatArray JNICALL Java_com_tssystems_Libraw_getCamMatrix(JNIEnv * env, jobject obj){
+JNIEXPORT jfloatArray JNICALL Java_com_tssystems_librawtest_Libraw_getCamMatrix(JNIEnv * env, jobject obj){
 	float* mul = (float*)librawData->color.cmatrix;
 	jfloatArray jfloatArray = (*env)->NewFloatArray(env, 12);
 	(*env)->SetFloatArrayRegion(env, jfloatArray, 0, 12, mul);
 	return jfloatArray;
 }
-JNIEXPORT jint JNICALL Java_com_tssystems_Libraw_getColors(JNIEnv * env, jobject obj){
+JNIEXPORT jint JNICALL Java_com_tssystems_librawtest_Libraw_getColors(JNIEnv * env, jobject obj){
 	return librawData->rawdata.iparams.colors;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setUseCameraMatrix(JNIEnv * env, jobject obj,jint use_camera_matrix){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setUseCameraMatrix(JNIEnv * env, jobject obj,jint use_camera_matrix){
 	librawData->params.use_camera_matrix=use_camera_matrix;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setQuality(JNIEnv * env, jobject obj,jint quality){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setQuality(JNIEnv * env, jobject obj,jint quality){
 	librawData->params.user_qual=quality;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setAutoBrightness(JNIEnv * env, jobject obj,jboolean autoBrightness){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setAutoBrightness(JNIEnv * env, jobject obj,jboolean autoBrightness){
 	librawData->params.no_auto_bright=!autoBrightness;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setAutoWhitebalance(JNIEnv * env, jobject obj,jboolean autoWhitebalance){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setAutoWhitebalance(JNIEnv * env, jobject obj,jboolean autoWhitebalance){
 	librawData->params.use_camera_wb=autoWhitebalance;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setOutputColorSpace(JNIEnv * env, jobject obj,jint space){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setOutputColorSpace(JNIEnv * env, jobject obj,jint space){
 	librawData->params.output_color=space;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setHighlightMode(JNIEnv * env, jobject obj,jint highlight){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setHighlightMode(JNIEnv * env, jobject obj,jint highlight){
 	librawData->params.highlight=highlight;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setOutputBps(JNIEnv * env, jobject obj,jint output_bps){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setOutputBps(JNIEnv * env, jobject obj,jint output_bps){
 	librawData->params.output_bps=output_bps;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setHalfSize(JNIEnv * env, jobject obj,jboolean half_size){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setHalfSize(JNIEnv * env, jobject obj,jboolean half_size){
 	librawData->params.half_size=half_size;
 }
 
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setUserMul(JNIEnv * env, jobject obj,jfloat r,jfloat g1,jfloat b,jfloat g2){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setUserMul(JNIEnv * env, jobject obj,jfloat r,jfloat g1,jfloat b,jfloat g2){
 	librawData->params.user_mul[0]=r;
 	librawData->params.user_mul[1]=g1;
 	librawData->params.user_mul[2]=b;
 	librawData->params.user_mul[3]=g2;
 }
-JNIEXPORT void JNICALL Java_com_tssystems_Libraw_setGamma(JNIEnv * env, jobject obj,jdouble g1,jdouble g2){
+JNIEXPORT void JNICALL Java_com_tssystems_librawtest_Libraw_setGamma(JNIEnv * env, jobject obj,jdouble g1,jdouble g2){
 	librawData->params.gamm[0]=g1;
 	librawData->params.gamm[1]=g2;
 }
@@ -185,7 +185,7 @@ libraw_processed_image_t* decode(int* error){
 	__android_log_print(ANDROID_LOG_INFO,"libraw","result dcraw %d",dcraw);
 	return libraw_dcraw_make_mem_image(librawData,error);
 }
-JNIEXPORT jstring JNICALL Java_com_tssystems_Libraw_getCameraList(JNIEnv * env, jobject obj){
+JNIEXPORT jstring JNICALL Java_com_tssystems_librawtest_Libraw_getCameraList(JNIEnv * env, jobject obj){
 	jstring result;
 	char message[1024*1024];
 	strcpy(message,"");
@@ -198,7 +198,7 @@ JNIEXPORT jstring JNICALL Java_com_tssystems_Libraw_getCameraList(JNIEnv * env, 
 	result = (*env)->NewStringUTF(env,message); 
  return result;       
 }
-JNIEXPORT jintArray JNICALL Java_com_tssystems_Libraw_getPixels8(JNIEnv * env, jobject obj){
+JNIEXPORT jintArray JNICALL Java_com_tssystems_librawtest_Libraw_getPixels8(JNIEnv * env, jobject obj){
 	int error;
 	image=decode(&error);
 	if(image!=NULL){
@@ -223,7 +223,7 @@ JNIEXPORT jintArray JNICALL Java_com_tssystems_Libraw_getPixels8(JNIEnv * env, j
 	__android_log_print(ANDROID_LOG_INFO,"libraw","error getPixels8 %d",error);
 	return NULL;
 }
-JNIEXPORT jlong JNICALL Java_com_tssystems_Libraw_getPixels16(JNIEnv * env, jobject obj){
+JNIEXPORT jlong JNICALL Java_com_tssystems_librawtest_Libraw_getPixels16(JNIEnv * env, jobject obj){
 	int error;
 	image=decode(&error);
 	__android_log_print(ANDROID_LOG_INFO,"libraw","decode result %d data_size %d",error,image->data_size);

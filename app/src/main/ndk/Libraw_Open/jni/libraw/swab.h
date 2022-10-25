@@ -5,7 +5,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-void swab(const void *p_src_, void *p_dst_, ssize_t n);
+void swab(const void *from, void *to, ssize_t n);
 #ifdef __cplusplus
 }
 #endif

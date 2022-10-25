@@ -1,0 +1,7 @@
+Executable : /home/ramses/Android/Sdk/cmake/3.18.1/bin/ninja
+arguments : 
+-C
+/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/x86_64
+libraw
+jvmArgs : 
+

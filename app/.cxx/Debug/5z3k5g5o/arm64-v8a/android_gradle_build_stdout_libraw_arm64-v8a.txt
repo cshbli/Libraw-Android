@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/ramses/AndroidStudioProjects/librawtest/app/.cxx/Debug/5z3k5g5o/arm64-v8a'
+ninja: no work to do.
